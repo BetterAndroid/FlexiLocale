@@ -35,8 +35,8 @@ val appName = locale.appName
 如果你依然在使用 Java，那么写法保持不变。
 
 ```java
-var locale = AppLocale.attach(context);
-var appName = locale.getAppName();
+var locale=AppLocale.attach(context);
+        var appName=locale.getAppName();
 ```
 
 ## 兼容性
@@ -57,11 +57,11 @@ var appName = locale.getAppName();
 
 ## 开始使用
 
-- [点击这里](https://github.com/BetterAndroid/FlexiLocale/blob/master/docs/guide.md) 查看使用文档
+- [点击这里](https://github.com/BetterAndroid/FlexiLocale/blob/master/docs/guide-zh-CN.md) 查看使用文档
 
 ## 更新日志
 
-- [点击这里](https://github.com/BetterAndroid/FlexiLocale/blob/master/docs/changelog.md) 查看历史更新日志
+- [点击这里](https://github.com/BetterAndroid/FlexiLocale/blob/master/docs/changelog-zh-CN.md) 查看历史更新日志
 
 ## 项目推广
 
