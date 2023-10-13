@@ -139,7 +139,6 @@ internal object LocaleAnalysisHelper {
                     extension.applicationVariants.forEach { variant ->
                         variant.updateResDirectories()
                     }; extension.updateSourceDirs()
-                    extension.sourceSets.configureEach { kotlin.srcDir(configs.generateDirPath) }
                 }
             }
             project.plugins.withId(LIBRARY_PLUGIN_NAME) {
