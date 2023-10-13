@@ -35,8 +35,8 @@ val appName = locale.appName
 如果你依然在使用 Java，那么写法保持不变。
 
 ```java
-var locale=AppLocale.attach(context);
-        var appName=locale.getAppName();
+var locale = AppLocale.attach(context);
+var appName = locale.getAppName();
 ```
 
 ## 兼容性
