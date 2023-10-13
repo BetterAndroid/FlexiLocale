@@ -38,8 +38,8 @@ val appName = locale.appName
 If you are still using Java, the writing method remains the same.
 
 ```java
-var locale=AppLocale.attach(context);
-        var appName=locale.getAppName();
+var locale = AppLocale.attach(context);
+var appName = locale.getAppName();
 ```
 
 ## Compatibility
