@@ -37,6 +37,8 @@ import com.highcapable.flexilocale.utils.debug.FError
 import com.highcapable.flexilocale.utils.debug.FLog
 import com.highcapable.flexilocale.utils.factory.toFile
 import org.gradle.api.Project
+import org.jetbrains.kotlin.gradle.dsl.KotlinAndroidProjectExtension
+import org.jetbrains.kotlin.gradle.dsl.KotlinProjectExtension
 import org.w3c.dom.Element
 import org.w3c.dom.Node
 import java.io.File
@@ -52,6 +54,9 @@ internal object LocaleAnalysisHelper {
 
     /** Android 的 Library 插件名称 */
     private const val LIBRARY_PLUGIN_NAME = "com.android.library"
+
+    /** Kotlin 的 Android 插件名称 */
+    private const val KT_ANDROID_PLUGIN_NAME = "org.jetbrains.kotlin.android"
 
     /** I18ns 代码生成实例 */
     private val generator = LocaleSourcesGenerator()
@@ -126,6 +131,7 @@ internal object LocaleAnalysisHelper {
     private fun initializePlugins(project: Project) {
         runCatching {
             fun BaseExtension.updateSourceDirs() = sourceSets.configureEach { kotlin.srcDir(configs.generateDirPath) }
+            fun KotlinProjectExtension.updateSourceDirs() = sourceSets.configureEach { kotlin.srcDir(configs.generateDirPath) }
             fun BaseVariant.updateResDirectories() = sourceSets.forEach { provide -> provide.resDirectories?.also { resDirectories.addAll(it) } }
             project.plugins.withId(APPLICATION_PLUGIN_NAME) {
                 project.get<AppExtension>().also { extension ->
@@ -133,6 +139,7 @@ internal object LocaleAnalysisHelper {
                     extension.applicationVariants.forEach { variant ->
                         variant.updateResDirectories()
                     }; extension.updateSourceDirs()
+                    extension.sourceSets.configureEach { kotlin.srcDir(configs.generateDirPath) }
                 }
             }
             project.plugins.withId(LIBRARY_PLUGIN_NAME) {
@@ -141,6 +148,11 @@ internal object LocaleAnalysisHelper {
                     extension.libraryVariants.forEach { variant ->
                         variant.updateResDirectories()
                     }; extension.updateSourceDirs()
+                }
+            }
+            project.plugins.withId(KT_ANDROID_PLUGIN_NAME) {
+                project.get<KotlinAndroidProjectExtension>().also { extension ->
+                    extension.updateSourceDirs()
                 }
             }
         }.onFailure { FError.make("Failed to initialize Android Gradle plugin, this may be not or a wrong Android project\n$it") }

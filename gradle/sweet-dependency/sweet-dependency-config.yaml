@@ -20,6 +20,9 @@ libraries:
   com.android.library:
     com.android.library.gradle.plugin:
       version: 8.1.2
+  org.jetbrains.kotlin:
+    kotlin-gradle-plugin:
+      version: 1.9.10
   com.squareup:
     kotlinpoet:
       version: 1.14.2

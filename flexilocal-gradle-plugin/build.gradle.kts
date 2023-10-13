@@ -22,6 +22,7 @@ kotlin {
 
 dependencies {
     compileOnly(com.android.library.com.android.library.gradle.plugin)
+    compileOnly(org.jetbrains.kotlin.kotlin.gradle.plugin)
     implementation(com.squareup.kotlinpoet)
 }
 
