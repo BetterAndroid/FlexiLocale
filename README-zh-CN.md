@@ -11,6 +11,11 @@
 
 [English](https://github.com/BetterAndroid/FlexiLocale/blob/master/README.md) | 简体中文
 
+| <img src="https://github.com/BetterAndroid/.github/blob/main/img-src/logo.png?raw=true" width = "30" height = "30" alt="LOGO"/> | [BetterAndroid](https://github.com/BetterAndroid) |
+|---------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------|
+
+这个项目属于上述组织，**点击上方链接关注这个组织**，发现更多好项目。
+
 ## 这是什么
 
 这是一个用来自动为 Android 项目生成国际化字符串调用代码功能的 Gradle 插件。

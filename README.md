@@ -11,6 +11,11 @@ An easy generation Android i18ns string call Gradle plugin.
 
 English | [简体中文](https://github.com/BetterAndroid/FlexiLocale/blob/master/README-zh-CN.md)
 
+| <img src="https://github.com/BetterAndroid/.github/blob/main/img-src/logo.png?raw=true" width = "30" height = "30" alt="LOGO"/> | [BetterAndroid](https://github.com/BetterAndroid) |
+|---------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------|
+
+This project belongs to the above-mentioned organization, **click the link above to follow this organization** and discover more good projects.
+
 ## What's this
 
 This is a Gradle plugin for automatically generating i18ns string calling code functions for Android projects.
