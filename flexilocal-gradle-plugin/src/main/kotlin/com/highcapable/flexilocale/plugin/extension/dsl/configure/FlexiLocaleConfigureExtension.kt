@@ -91,13 +91,13 @@ open class FlexiLocaleConfigureExtension internal constructor() {
     internal fun build(project: Project): IFlexiLocaleConfigs {
         /** 检查合法包名 */
         fun String.checkingValidPackageName() {
-            if (isNotBlank() && matches("^[a-zA-Z_][a-zA-Z0-9_]*(\\.[a-zA-Z_][a-zA-Z0-9_]*)*$".toRegex()).not())
+            if (isNotBlank() && !matches("^[a-zA-Z_][a-zA-Z0-9_]*(\\.[a-zA-Z_][a-zA-Z0-9_]*)*$".toRegex()))
                 FError.make("Invalid package name \"$this\"")
         }
 
         /** 检查合法类名 */
         fun String.checkingValidClassName() {
-            if (isNotBlank() && matches("^[a-zA-Z][a-zA-Z0-9_]*$".toRegex()).not())
+            if (isNotBlank() && !matches("^[a-zA-Z][a-zA-Z0-9_]*$".toRegex()))
                 FError.make("Invalid class name \"$this\"")
         }
         packageName.checkingValidPackageName()

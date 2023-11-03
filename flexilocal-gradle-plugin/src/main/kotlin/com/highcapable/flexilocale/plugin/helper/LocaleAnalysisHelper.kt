@@ -86,7 +86,7 @@ internal object LocaleAnalysisHelper {
      */
     internal fun start(project: Project, configs: IFlexiLocaleConfigs) {
         this.configs = configs
-        if (configs.isEnable.not()) return
+        if (!configs.isEnable) return
         checkingConfigsModified(project, configs)
         initializePlugins(project)
         val lastMappedStrings: LocaleStringMap = mutableMapOf()
@@ -106,7 +106,7 @@ internal object LocaleAnalysisHelper {
             }
         }.clear()
         val isFileModified = mappedStrings != lastMappedStrings
-        if (isFileModified.not() && isConfigsModified.not()) return
+        if (!isFileModified && !isConfigsModified) return
         mappedStrings.clear()
         mappedStrings.putAll(lastMappedStrings)
         lastMappedStrings.clear()
@@ -172,7 +172,7 @@ internal object LocaleAnalysisHelper {
         val valuesDirs: LocaleFileMap = mutableMapOf()
         forEach {
             it.listFiles()?.filter { dir -> dir.name.startsWith("values") }?.forEach eachDir@{ valuesDir ->
-                if (valuesDir.exists().not() || valuesDir.isDirectory.not()) return@eachDir
+                if (!valuesDir.exists() || !valuesDir.isDirectory) return@eachDir
                 val langName = if (valuesDir.name == "values") "default" else valuesDir.name.split("s-").getOrNull(1) ?: return@eachDir
                 if (valuesDirs[langName] == null) valuesDirs[langName] = mutableSetOf()
                 valuesDirs[langName]?.add(valuesDir)
