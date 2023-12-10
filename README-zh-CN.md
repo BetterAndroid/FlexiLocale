@@ -5,11 +5,11 @@
 [![Telegram](https://img.shields.io/badge/discussion-Telegram-blue.svg?logo=telegram)](https://t.me/BetterAndroid)
 [![Telegram](https://img.shields.io/badge/discussion%20dev-Telegram-blue.svg?logo=telegram)](https://t.me/HighCapable_Dev)
 
-<img src="https://github.com/BetterAndroid/FlexiLocale/blob/master/img-src/icon.png?raw=true" width = "100" height = "100" alt="LOGO"/>
+<img src="img-src/icon.png" width = "100" height = "100" alt="LOGO"/>
 
 一个自动为 Android 项目生成国际化字符串调用的 Gradle 插件。
 
-[English](https://github.com/BetterAndroid/FlexiLocale/blob/master/README.md) | 简体中文
+[English](README.md) | 简体中文
 
 | <img src="https://github.com/BetterAndroid/.github/blob/main/img-src/logo.png?raw=true" width = "30" height = "30" alt="LOGO"/> | [BetterAndroid](https://github.com/BetterAndroid) |
 |---------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------|
@@ -62,11 +62,11 @@ var appName = locale.getAppName();
 
 ## 开始使用
 
-- [点击这里](https://github.com/BetterAndroid/FlexiLocale/blob/master/docs/guide-zh-CN.md) 查看使用文档
+- [点击这里](docs/guide-zh-CN.md) 查看使用文档
 
 ## 更新日志
 
-- [点击这里](https://github.com/BetterAndroid/FlexiLocale/blob/master/docs/changelog-zh-CN.md) 查看历史更新日志
+- [点击这里](docs/changelog-zh-CN.md) 查看历史更新日志
 
 ## 项目推广
 

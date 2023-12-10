@@ -5,11 +5,11 @@
 [![Telegram](https://img.shields.io/badge/discussion-Telegram-blue.svg?logo=telegram)](https://t.me/BetterAndroid)
 [![Telegram](https://img.shields.io/badge/discussion%20dev-Telegram-blue.svg?logo=telegram)](https://t.me/HighCapable_Dev)
 
-<img src="https://github.com/BetterAndroid/FlexiLocale/blob/master/img-src/icon.png?raw=true" width = "100" height = "100" alt="LOGO"/>
+<img src="img-src/icon.png" width = "100" height = "100" alt="LOGO"/>
 
 An easy generation Android i18ns string call Gradle plugin.
 
-English | [简体中文](https://github.com/BetterAndroid/FlexiLocale/blob/master/README-zh-CN.md)
+English | [简体中文](README-zh-CN.md)
 
 | <img src="https://github.com/BetterAndroid/.github/blob/main/img-src/logo.png?raw=true" width = "30" height = "30" alt="LOGO"/> | [BetterAndroid](https://github.com/BetterAndroid) |
 |---------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------|
@@ -65,11 +65,11 @@ Some functions may be incompatible, support will be gradually dropped in the fut
 
 ## Get Started
 
-- [Click here](https://github.com/BetterAndroid/FlexiLocale/blob/master/docs/guide.md) to view the documentation
+- [Click here](docs/guide.md) to view the documentation
 
 ## Changelog
 
-- [Click here](https://github.com/BetterAndroid/FlexiLocale/blob/master/docs/changelog.md) to view the historical changelog
+- [Click here](docs/changelog.md) to view the historical changelog
 
 ## Promotion
 
