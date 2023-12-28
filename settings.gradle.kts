@@ -22,4 +22,4 @@ sweetProperty {
     rootProject { all { isEnable = false } }
 }
 rootProject.name = "FlexiLocale"
-include(":flexilocal-gradle-plugin")
+include(":flexilocale-gradle-plugin")
