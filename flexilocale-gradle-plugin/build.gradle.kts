@@ -4,10 +4,8 @@ plugins {
     autowire(libs.plugins.maven.publish)
 }
 
-allprojects {
-    group = property.project.groupName
-    version = property.project.version
-}
+group = property.project.groupName
+version = property.project.version
 
 java {
     sourceCompatibility = JavaVersion.VERSION_17
@@ -33,34 +31,4 @@ gradlePlugin {
             implementationClass = property.gradle.plugin.implementationClass
         }
     }
-}
-
-mavenPublishing {
-    coordinates(property.project.groupName, property.project.moduleName, property.project.version)
-    pom {
-        name = property.project.name
-        description = property.project.description
-        url = property.project.url
-        licenses {
-            license {
-                name = property.project.licence.name
-                url = property.project.licence.url
-                distribution = property.project.licence.url
-            }
-        }
-        developers {
-            developer {
-                id = property.project.developer.id
-                name = property.project.developer.name
-                email = property.project.developer.email
-            }
-        }
-        scm {
-            url = property.maven.publish.scm.url
-            connection = property.maven.publish.scm.connection
-            developerConnection = property.maven.publish.scm.developerConnection
-        }
-    }
-    publishToMavenCentral(com.vanniktech.maven.publish.SonatypeHost.S01)
-    signAllPublications()
 }

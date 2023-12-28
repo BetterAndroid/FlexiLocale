@@ -37,5 +37,5 @@ object FlexiLocale {
     const val VERSION = FlexiLocaleProperties.PROJECT_VERSION
 
     /** 项目地址 */
-    const val PROJECT_URL = FlexiLocaleProperties.PROJECT_URL
+    const val PROJECT_URL = FlexiLocaleProperties.POM_URL
 }
