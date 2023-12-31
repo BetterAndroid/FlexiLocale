@@ -1,6 +1,6 @@
 /*
  * FlexiLocale - An easy generation Android i18ns string call Gradle plugin.
- * Copyright (C) 2019-2023 HighCapable
+ * Copyright (C) 2019-2024 HighCapable
  * https://github.com/BetterAndroid/FlexiLocale
  *
  * Apache License Version 2.0
