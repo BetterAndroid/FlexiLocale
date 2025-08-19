@@ -80,6 +80,10 @@ android {
         // Default is "build/generated/flexi-locale"
         // It is recommended to place the generated code in the "build" directory, because the generated code is not recommended to be modified
         generateDirPath = "build/generated/flexi-locale"
+        // Custom deployed `sourceSet` name
+        // If your project source code deployment name is not the default value, you can customize it here
+        // Defaults to "main"
+        sourceSetName = "main"
         // Customize the generated package name
         // Android projects use the "namespace" in the "android" configuration method block by default
         // You don't need to set it, the package name will be automatically matched under normal circumstances
@@ -106,7 +110,9 @@ If you want to use it in Groovy DSL, please change the `=` of all variables to s
 Assume this is the `strings.xml` of your current project, divided into two directories: `default` and `zh-rCN`.
 
 > values/strings.xml
+
 ```xml
+
 <resources>
     <string name="app_name">My App</string>
     <string name="say_hello">Hello %1$s</string>
@@ -116,6 +122,7 @@ Assume this is the `strings.xml` of your current project, divided into two direc
 > values-zh-rCN/strings.xml
 
 ```xml
+
 <resources>
     <string name="app_name">我的应用</string>
     <string name="say_hello">你好 %1$s</string>

@@ -74,6 +74,10 @@ android {
         // 默认为 "build/generated/flexi-locale"
         // 建议将生成的代码放置于 "build" 目录下，因为生成的代码不建议去修改它
         generateDirPath = "build/generated/flexi-locale"
+        // 自定义部署的 `sourceSet` 名称
+        // 如果你的项目源码部署名称不是默认值，可以在这里自定义
+        // 默认为 "main"
+        sourceSetName = "main"
         // 自定义生成的包名
         // Android 项目默认使用 "android" 配置方法块中的 "namespace"
         // 你可以不进行设置，包名在一般情况下会自动进行匹配
