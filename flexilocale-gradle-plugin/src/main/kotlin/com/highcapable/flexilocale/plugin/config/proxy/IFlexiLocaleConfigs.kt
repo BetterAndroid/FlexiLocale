@@ -37,6 +37,11 @@ internal interface IFlexiLocaleConfigs {
          * "build/generated/[FlexiLocaleProperties.PROJECT_MODULE_NAME]"
          */
         internal const val DEFAULT_GENERATE_DIR_PATH = "build/generated/${FlexiLocaleProperties.PROJECT_MODULE_NAME}"
+
+        /**
+         * 默认的部署 `sourceSet` 名称
+         */
+        internal const val DEFAULT_SOURCE_SET_NAME = "main"
     }
 
     /** 是否启用插件 */
@@ -44,6 +49,9 @@ internal interface IFlexiLocaleConfigs {
 
     /** 自定义生成的目录路径 */
     val generateDirPath: String
+
+    /** 自定义部署的 `sourceSet` 名称 */
+    val sourceSetName: String
 
     /** 自定义生成的包名 */
     val packageName: String
@@ -58,5 +66,5 @@ internal interface IFlexiLocaleConfigs {
      * 获取内部 [hashCode]
      * @return [Int]
      */
-    fun innerHashCode() = "$isEnable$generateDirPath$packageName$className$isEnableRestrictedAccess".hashCode()
+    fun innerHashCode() = "$isEnable$generateDirPath$sourceSetName$packageName$className$isEnableRestrictedAccess".hashCode()
 }

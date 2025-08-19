@@ -60,6 +60,16 @@ open class FlexiLocaleConfigureExtension internal constructor() {
         @JvmName("generateDirPath") set
 
     /**
+     * 自定义部署的 `sourceSet` 名称
+     *
+     * 如果你的项目源码部署名称不是默认值 - 可以在这里自定义
+     *
+     * 默认为 [IFlexiLocaleConfigs.DEFAULT_SOURCE_SET_NAME]
+     */
+    var sourceSetName = IFlexiLocaleConfigs.DEFAULT_SOURCE_SET_NAME
+        @JvmName("sourceSetName") set
+
+    /**
      * 自定义生成的包名
      *
      * Android 项目默认使用 "android" 配置方法块中的 "namespace"
@@ -104,12 +114,14 @@ open class FlexiLocaleConfigureExtension internal constructor() {
         className.checkingValidClassName()
         val currentEnable = isEnable
         val currentGenerateDirPath = project.file(generateDirPath).absolutePath
+        val currentSourceSetName = sourceSetName
         val currentPackageName = packageName
         val currentClassName = "${className.ifBlank { project.fullName().uppercamelcase() }}Locale"
         val currentEnableRestrictedAccess = isEnableRestrictedAccess
         return object : IFlexiLocaleConfigs {
             override val isEnable get() = currentEnable
             override val generateDirPath get() = currentGenerateDirPath
+            override val sourceSetName get() = currentSourceSetName
             override val packageName get() = currentPackageName
             override val className get() = currentClassName
             override val isEnableRestrictedAccess get() = currentEnableRestrictedAccess

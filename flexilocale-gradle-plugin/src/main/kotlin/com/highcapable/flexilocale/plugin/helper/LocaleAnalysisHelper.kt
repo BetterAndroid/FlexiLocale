@@ -130,8 +130,12 @@ internal object LocaleAnalysisHelper {
      */
     private fun initializePlugins(project: Project) {
         runCatching {
-            fun BaseExtension.updateSourceDirs() = sourceSets.configureEach { kotlin.srcDir(configs.generateDirPath) }
-            fun KotlinProjectExtension.updateSourceDirs() = sourceSets.configureEach { kotlin.srcDir(configs.generateDirPath) }
+            fun BaseExtension.updateSourceDirs() = sourceSets.firstOrNull {
+                it.name == configs.sourceSetName
+            }?.kotlin?.srcDir(configs.generateDirPath) ?: FLog.warn("Could not found source set \"${configs.sourceSetName}\"")
+            fun KotlinProjectExtension.updateSourceDirs() = sourceSets.firstOrNull {
+                it.name == configs.sourceSetName
+            }?.kotlin?.srcDir(configs.generateDirPath) ?: FLog.warn("Could not found source set \"${configs.sourceSetName}\"")
             fun BaseVariant.updateResDirectories() = sourceSets.forEach { provide -> provide.resDirectories?.also { resDirectories.addAll(it) } }
             project.plugins.withId(APPLICATION_PLUGIN_NAME) {
                 project.get<AppExtension>().also { extension ->
