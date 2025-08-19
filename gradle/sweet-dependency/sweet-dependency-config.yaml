@@ -11,18 +11,18 @@ repositories:
 plugins:
   org.jetbrains.kotlin.jvm:
     alias: kotlin-jvm
-    version: 2.1.10
+    version: 2.2.10
   com.vanniktech.maven.publish:
     alias: maven-publish
-    version: 0.31.0
+    version: 0.34.0
 
 libraries:
   com.android.library:
     com.android.library.gradle.plugin:
-      version: 8.9.0
+      version: 8.12.1
   org.jetbrains.kotlin:
     kotlin-gradle-plugin:
-      version: 2.1.10
+      version: 2.2.10
   com.squareup:
     kotlinpoet:
-      version: 2.1.0
+      version: 2.2.0
