@@ -13,9 +13,14 @@ An easy generation Android i18ns string call Gradle plugin.
 English | [简体中文](README-zh-CN.md)
 
 | <img src="https://github.com/BetterAndroid/.github/blob/main/img-src/logo.png?raw=true" width = "30" height = "30" alt="LOGO"/> | [BetterAndroid](https://github.com/BetterAndroid) |
-|---------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------|
+| ------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------- |
 
-This project belongs to the above-mentioned organization, **click the link above to follow this organization** and discover more good projects.
+This project belongs to the organization above. **Click the link to follow us** and discover more awesome projects.
+
+## 🚨 Not Recommended to Use
+
+This project is no longer recommended for use, has not been maintained for a long time, and no longer supports AGP 9+.
+The entire project will be renamed and refactored in the future, stay tuned.
 
 ## What's this
 
@@ -71,17 +76,6 @@ Some functions may be incompatible, support will be gradually dropped in the fut
 ## Changelog
 
 - [Click here](docs/changelog.md) to view the historical changelog
-
-## Promotion
-
-<!--suppress HtmlDeprecatedAttribute -->
-<div align="center">
-     <h2>Hey, please stay! 👋</h2>
-     <h3>Here are related projects such as Android development tools, UI design, Gradle plugins, Xposed Modules and practical software. </h3>
-     <h3>If the project below can help you, please give me a star! </h3>
-     <h3>All projects are free, open source, and follow the corresponding open source license agreement. </h3>
-     <h1><a href="https://github.com/fankes/fankes/blob/main/project-promote/README.md">→ To see more about my projects, please click here ←</a></h1>
-</div>
 
 ## Star History
 

@@ -13,9 +13,13 @@
 [English](README.md) | 简体中文
 
 | <img src="https://github.com/BetterAndroid/.github/blob/main/img-src/logo.png?raw=true" width = "30" height = "30" alt="LOGO"/> | [BetterAndroid](https://github.com/BetterAndroid) |
-|---------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------|
+| ------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------- |
 
 这个项目属于上述组织，**点击上方链接关注这个组织**，发现更多好项目。
+
+## 🚨 不再推荐使用
+
+这个项目目前不再推荐使用，也很久没再维护了，并且它已不再支持 AGP 9+，整个项目后期会改名重构，敬请期待。
 
 ## 这是什么
 
@@ -68,17 +72,6 @@ var appName = locale.getAppName();
 ## 更新日志
 
 - [点击这里](docs/changelog-zh-CN.md) 查看历史更新日志
-
-## 项目推广
-
-<!--suppress HtmlDeprecatedAttribute -->
-<div align="center">
-    <h2>嘿，还请君留步！👋</h2>
-    <h3>这里有 Android 开发工具、UI 设计、Gradle 插件、Xposed 模块和实用软件等相关项目。</h3>
-    <h3>如果下方的项目能为你提供帮助，不妨为我点个 star 吧！</h3>
-    <h3>所有项目免费、开源，遵循对应开源许可协议。</h3>
-    <h1><a href="https://github.com/fankes/fankes/blob/main/project-promote/README-zh-CN.md">→ 查看更多关于我的项目，请点击这里 ←</a></h1>
-</div>
 
 ## Star History
 
