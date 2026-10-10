@@ -16,9 +16,9 @@ English | [简体中文](README-zh-CN.md)
 
 This project belongs to the organization above. **Click the link to follow us** and discover more awesome projects.
 
-## 🚨 Not Recommended to Use
+## 🚨 Maintenance of this project has been stopped
 
-This project is no longer recommended for use, has not been maintained for a long time, and no longer supports AGP 9+.
+The FlexiLocale project has been deprecated due to many unsolved black box issues, so we no longer recommend anyone to use it, and it no longer supports AGP 9+.
 The entire project will be renamed and refactored in the future, stay tuned.
 
 ## What's this
